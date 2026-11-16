@@ -1,0 +1,247 @@
+/* 全站共用設定 */
+:root {
+  --primary: #2459b8;
+  --primary-dark: #19438e;
+  --text: #263244;
+  --muted: #586579;
+  --border: #dce4ef;
+  --soft-blue: #edf4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--text);
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+/* 首頁標題區 */
+.hero {
+  padding: 48px 32px;
+  margin-bottom: 36px;
+  background: var(--soft-blue);
+  border-radius: 20px;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 8px 0 16px;
+  font-size: clamp(32px, 6vw, 48px);
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+p {
+  margin: 12px 0;
+}
+
+/* 共用卡片 */
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--soft-blue);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.meta {
+  color: var(--muted);
+}
+
+/* 連結與按鈕 */
+a {
+  color: var(--primary);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--primary-dark);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #b45309;
+  outline-offset: 4px;
+}
+
+/* 使用說明與頁尾 */
+.guide {
+  margin-top: 32px;
+}
+
+.guide h2 {
+  margin-top: 0;
+}
+
+.guide ol {
+  padding-left: 24px;
+}
+
+.guide li {
+  margin-bottom: 8px;
+}
+
+footer {
+  margin-top: 36px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* 手機版排版 */
+@media (max-width: 640px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .hero {
+    padding: 32px 24px;
+  }
+
+  .lesson-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}
+/* 單元頁面 */
+.section-gap {
+  margin-top: 24px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--soft-blue);
+}
+
+.example + .example {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.example p:first-child {
+  font-weight: 700;
+}
+
+/* 共用測驗 */
+.quiz-options {
+  display: grid;
+  gap: 12px;
+}
+
+.option-button {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #ffffff;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.option-button:hover:not(:disabled) {
+  background: var(--soft-blue);
+  border-color: var(--primary);
+}
+
+.option-button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.option-button.correct {
+  border-color: #237a43;
+  background: #edf9f0;
+  color: #18552e;
+}
+
+.option-button.incorrect {
+  border-color: #b42318;
+  background: #fff1f0;
+  color: #912018;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+[hidden] {
+  display: none !important;
+}

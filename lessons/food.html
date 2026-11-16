@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>飲食單字｜日文小練習</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/quiz.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <a href="../index.html">← 返回首頁</a>
+
+    <header class="hero">
+      <p class="eyebrow">單元 02</p>
+      <h1>飲食單字</h1>
+      <p>認識常見的食物與飲料，學習簡單的飲食表達。</p>
+    </header>
+
+    <section class="card">
+      <h2>單字</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">日文</th>
+              <th scope="col">假名讀音</th>
+              <th scope="col">中文意思</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td lang="ja">ご飯</td>
+              <td lang="ja">ごはん</td>
+              <td>飯、餐食</td>
+            </tr>
+            <tr>
+              <td lang="ja">パン</td>
+              <td lang="ja">パン</td>
+              <td>麵包</td>
+            </tr>
+            <tr>
+              <td lang="ja">水</td>
+              <td lang="ja">みず</td>
+              <td>水</td>
+            </tr>
+            <tr>
+              <td lang="ja">お茶</td>
+              <td lang="ja">おちゃ</td>
+              <td>茶</td>
+            </tr>
+            <tr>
+              <td lang="ja">牛乳</td>
+              <td lang="ja">ぎゅうにゅう</td>
+              <td>牛奶</td>
+            </tr>
+            <tr>
+              <td lang="ja">卵</td>
+              <td lang="ja">たまご</td>
+              <td>蛋</td>
+            </tr>
+            <tr>
+              <td lang="ja">肉</td>
+              <td lang="ja">にく</td>
+              <td>肉</td>
+            </tr>
+            <tr>
+              <td lang="ja">魚</td>
+              <td lang="ja">さかな</td>
+              <td>魚</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="meta">
+        小提醒：「ご飯」可以指白飯，也可以指一餐，
+        要依照句子的情境判斷。
+      </p>
+    </section>
+
+    <section class="card section-gap">
+      <h2>例句</h2>
+
+      <div class="example">
+        <p lang="ja">パンを食べます。</p>
+        <p>我吃麵包。</p>
+      </div>
+
+      <div class="example">
+        <p lang="ja">水を飲みます。</p>
+        <p>我喝水。</p>
+      </div>
+
+      <div class="example">
+        <p lang="ja">お茶をください。</p>
+        <p>請給我茶。</p>
+      </div>
+
+      <div class="example">
+        <p lang="ja">魚を食べます。</p>
+        <p>我吃魚。</p>
+      </div>
+
+      <p class="meta">
+        句型提示：食べます（たべます）表示「吃」，
+        飲みます（のみます）表示「喝」；
+        「～をください」表示「請給我～」。
+        助詞「を」讀作「お」。
+      </p>
+    </section>
+
+    <section class="card section-gap">
+      <h2>選擇題練習</h2>
+      <p>共 5 題，選擇答案後會顯示解釋。</p>
+      <div id="quiz"></div>
+    </section>
+
+    <footer>
+      <a href="../index.html">返回首頁，選擇其他單元</a>
+    </footer>
+  </main>
+
+  <script type="application/json" id="quiz-data">
+  [
+    {
+      "question": "「パン」的中文意思是什麼？",
+      "options": ["白飯", "麵包", "牛奶", "魚"],
+      "answerIndex": 1,
+      "explanation": "パン的意思是麵包，使用片假名書寫。"
+    },
+    {
+      "question": "「牛乳」的讀音是哪一個？",
+      "options": ["ぎゅうにゅう", "ごはん", "たまご", "おちゃ"],
+      "answerIndex": 0,
+      "explanation": "牛乳讀作ぎゅうにゅう，意思是牛奶。"
+    },
+    {
+      "question": "哪個日文單字表示「蛋」？",
+      "options": ["肉", "水", "魚", "卵"],
+      "answerIndex": 3,
+      "explanation": "卵讀作たまご，意思是蛋。"
+    },
+    {
+      "question": "「水を飲みます。」的意思是什麼？",
+      "options": ["我吃麵包。", "請給我茶。", "我喝水。", "我吃魚。"],
+      "answerIndex": 2,
+      "explanation": "水是みず，飲みます表示喝，因此這句是「我喝水」。"
+    },
+    {
+      "question": "想說「請給我茶」，應該選哪一句？",
+      "options": [
+        "お茶をください。",
+        "魚を食べます。",
+        "水を飲みます。",
+        "パンを食べます。"
+      ],
+      "answerIndex": 0,
+      "explanation": "お茶是茶，「～をください」表示「請給我～」。"
+    }
+  ]
+  </script>
+</body>
+</html>
