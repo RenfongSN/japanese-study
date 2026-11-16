@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日常招呼｜日文小練習</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/quiz.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <a href="../index.html">← 返回首頁</a>
+
+    <header class="hero">
+      <p class="eyebrow">單元 01</p>
+      <h1>日常招呼</h1>
+      <p>學會常見的招呼與禮貌用語，並依照情境選擇合適的說法。</p>
+    </header>
+
+    <section class="card">
+      <h2>單字與常用表達</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">日文</th>
+              <th scope="col">假名讀音</th>
+              <th scope="col">中文意思</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td lang="ja">おはようございます</td>
+              <td lang="ja">おはようございます</td>
+              <td>早安（禮貌說法）</td>
+            </tr>
+            <tr>
+              <td lang="ja">こんにちは</td>
+              <td lang="ja">こんにちは（は讀作わ）</td>
+              <td>你好、午安</td>
+            </tr>
+            <tr>
+              <td lang="ja">こんばんは</td>
+              <td lang="ja">こんばんは（は讀作わ）</td>
+              <td>晚上好</td>
+            </tr>
+            <tr>
+              <td lang="ja">ありがとうございます</td>
+              <td lang="ja">ありがとうございます</td>
+              <td>謝謝（禮貌說法）</td>
+            </tr>
+            <tr>
+              <td lang="ja">すみません</td>
+              <td lang="ja">すみません</td>
+              <td>不好意思、對不起</td>
+            </tr>
+            <tr>
+              <td lang="ja">さようなら</td>
+              <td lang="ja">さようなら</td>
+              <td>再見</td>
+            </tr>
+            <tr>
+              <td lang="ja">おやすみなさい</td>
+              <td lang="ja">おやすみなさい</td>
+              <td>晚安（睡前道別）</td>
+            </tr>
+            <tr>
+              <td lang="ja">じゃあ、また</td>
+              <td lang="ja">じゃあ、また</td>
+              <td>那麼，下次見（較隨意）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="meta">
+        小提醒：「こんばんは」是晚上見面時的招呼；
+        「おやすみなさい」通常用於睡前道別。
+      </p>
+    </section>
+
+    <section class="card section-gap">
+      <h2>例句</h2>
+
+      <div class="example">
+        <p lang="ja">先生、おはようございます。</p>
+        <p>老師，早安。</p>
+      </div>
+
+      <div class="example">
+        <p lang="ja">ありがとうございます。</p>
+        <p>謝謝您。</p>
+      </div>
+
+      <div class="example">
+        <p lang="ja">すみません、田中さんですか。</p>
+        <p>不好意思，請問您是田中先生／小姐嗎？</p>
+      </div>
+
+      <div class="example">
+        <p lang="ja">じゃあ、また。</p>
+        <p>那麼，下次見。</p>
+      </div>
+    </section>
+
+    <section class="card section-gap">
+      <h2>選擇題練習</h2>
+      <p>共 5 題，選擇答案後會顯示解釋。</p>
+      <div id="quiz"></div>
+    </section>
+
+    <footer>
+      <a href="../index.html">返回首頁，選擇其他單元</a>
+    </footer>
+  </main>
+
+  <script type="application/json" id="quiz-data">
+  [
+    {
+      "question": "早上遇到老師，哪一句最適合？",
+      "options": [
+        "こんばんは",
+        "おはようございます",
+        "おやすみなさい",
+        "さようなら"
+      ],
+      "answerIndex": 1,
+      "explanation": "おはようございます是「早安」的禮貌說法，適合向老師打招呼。"
+    },
+    {
+      "question": "「ありがとうございます」的意思是什麼？",
+      "options": ["對不起", "再見", "謝謝", "晚安"],
+      "answerIndex": 2,
+      "explanation": "ありがとうございます是表達感謝的禮貌說法。"
+    },
+    {
+      "question": "晚上見面時，應該說哪一句？",
+      "options": [
+        "こんばんは",
+        "おやすみなさい",
+        "おはようございます",
+        "じゃあ、また"
+      ],
+      "answerIndex": 0,
+      "explanation": "こんばんは用於晚上見面打招呼；おやすみなさい通常用於睡前道別。"
+    },
+    {
+      "question": "想禮貌地引起別人注意，說「不好意思」時，可以用哪一句？",
+      "options": [
+        "さようなら",
+        "おやすみなさい",
+        "こんにちは",
+        "すみません"
+      ],
+      "answerIndex": 3,
+      "explanation": "すみません除了道歉，也能用來禮貌地引起別人注意。"
+    },
+    {
+      "question": "「じゃあ、また」最接近哪個意思？",
+      "options": ["早安", "下次見", "謝謝您", "不好意思"],
+      "answerIndex": 1,
+      "explanation": "じゃあ、また是較隨意的道別方式，意思是「那麼，下次見」。"
+    }
+  ]
+  </script>
+</body>
+</html>
